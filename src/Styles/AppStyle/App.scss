@@ -1,0 +1,121 @@
+html,body {
+    background: var(--bg);
+    @include Scrollbar(var(--primary)) ;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: var(--text);
+
+
+    
+
+
+
+}
+
+.cvButton{
+    width: 12%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: var(--primary);
+    font-weight: bold;
+    padding: 5px;  
+}
+
+@media screen and (max-width: 700px) {
+    .cvButton{
+        width: 42%;
+        border: 1px solid #000;
+        border-radius: 10px;
+        color: var(--primary);
+        font-weight: bold;
+        padding: 5px;  
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none !important;
+    cursor: pointer;
+
+}
+
+button,
+svg {
+    cursor: pointer;
+}
+
+
+
+.not_foound_page{
+    background: black;
+    height: 100vh;
+    display: flex;justify-content: center;align-items:center;
+
+
+    p{
+        color: white;
+        display: inline;
+    
+    }
+    h6{
+        display: inline;
+        margin-inline:20px;
+        height: 140px !important;
+        
+        width: 20px;
+    }
+    .container-not-found{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            display: flex;justify-content: center;align-items: center;
+
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 8px;
+            border-radius: 10px;
+
+            margin-inline:30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark{
+    .ant-collapse .ant-collapse-content>.ant-collapse-content-box,.ant-select-single.ant-select-show-arrow .ant-select-selection-item,.ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder{
+        background: #474747;
+        color: rgb(209, 208, 208);
+    }
+    .ant-collapse>.ant-collapse-item >.ant-collapse-header .ant-collapse-expand-icon{
+        color: var(--text);
+    }
+    .form-control, input,.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+        background: #474747;
+        opacity: 1 !important;
+    }
+    .form-control::placeholder{
+        color: rgb(209, 208, 208) !important;
+    }
+    .ant-select-single .ant-select-selector{
+        color: rgb(209, 208, 208) !important;
+    }
+}
