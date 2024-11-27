@@ -62,14 +62,7 @@
     "start": "vite --port=3000",
     "build": "vite build",
     "test": "vite jest",
-    "eject": "react-scripts eject",
-    "g:api": "node src/Extensions/FileGenerator/generateApi.js",
-    "g:column": "node src/Extensions/FileGenerator/generateColumn.js",
-    "g:formutil": "node src/Extensions/FileGenerator/generateformUtils.js",
-    "g:page": "node src/Extensions/FileGenerator/generatePage.js",
-    "g:dashboard": "node src/Extensions/FileGenerator/generateDashboard.js ",
-    "g:modal:add": "node src/Extensions/FileGenerator/generateEditModal.js ",
-    "g:model:edit": "node src/Extensions/FileGenerator/generateEditModal.js "
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
